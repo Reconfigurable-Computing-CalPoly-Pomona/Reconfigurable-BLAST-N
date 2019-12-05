@@ -29,6 +29,16 @@ Blastn implemented in C++. This implementation is designed to be the fast implem
   * In the `cpp` directory, run the `make` command.
   * The generated binary will be `blastn`.
 
+## Usage
+Blastn will run and generate `result.txt` which can be renamed with the `-out` directive.
+```
+# FPGA Usage (Windows 10 only)
+$ .\Blastn -fpga COM_PORT -query QUERY_PATH -subject SUBJECT_PATH
+
+# Pure Software Implementation (Windows 10, Linux, and Mac)
+$ ./blastn -query QUERY_PATH -subject SUBJECT_PATH
+```
+
 ## Command Line Arguments
 | Argument       | Description                    | Default Value |
 |----------------|--------------------------------|---------------|
