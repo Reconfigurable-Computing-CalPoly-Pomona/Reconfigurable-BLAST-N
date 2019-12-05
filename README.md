@@ -17,11 +17,10 @@ Electrical and Computer Engineering Senior Project at California State Polytechn
 - Sivaramakrishnan Prabakar
 
 ## Advisors
-- Mohamed El-Hadedy (Mohamed Aly)
 - Mostafa M. Hashim Ellabaan
+- Mohamed El-Hadedy
 
 ## Project Reporting
-- [Paper](https://docs.google.com/document/d/1efzbBsXzkEi7pNegTqy0G0EC0baw4Xfw3ayusAVXP1I/edit?usp=sharing)
 - [Presentation](https://docs.google.com/presentation/d/148pHGbZyhRuX7aTDIOD6cvWq6DEl1R97VqgUeb22P9o/edit?usp=sharing)
 - [Poster](docs/blastn-poster.png)
 
@@ -43,7 +42,7 @@ For the Docker container, run `docker build -t blastn .` to create the environme
 |    GNU C++     | C++17, g++7.4+, GNU Make 4.2.1+ |
 |   Visual C++   | Visual Studio Suite 2019 |
 |    Python      | Python 3.6+, pip3, numpy, tqdm |
-|    Vivado      | Vivaduo 2019.1 |
+|    Vivado      | Vivado 2019.1 |
 
 ## Future Work
 Future work would entail implementing the entire BLASTn algorithm on the FPGA. Although the majority of performance gain can be accomplished by hardware accelerating the Smith-Waterman portion of the algorithm, there is value in having the entire algorithm running end to end on the board. The bottleneck in the process is the transmission rate of data between the computer and the FPGA, something that could be solved in two different ways. The first is to have the entire algorithm run on the FPGA. The second would be to use a faster communication method, such as PCIE. Additionally, there is still some benchmarking that could be done to show the true speed of our implementation. More runtimes could be tested by testing our algorithm on multiple FPGAs, and even creating arrays of FPGAs to try to see how fast our version of BLASTn could run.  Another improvement to this project could be on the implementation of the Smith-Waterman algorithm itself. During our hardware implementation of the Smith-Waterman, we came up with a few different promising ideas that could result in a speed-up. Unfortunately, we had to abandon these ideas in the interest of time and choose our stable, but slower, implementation of Smith-Waterman (that was successfully implemented on the FPGA).
