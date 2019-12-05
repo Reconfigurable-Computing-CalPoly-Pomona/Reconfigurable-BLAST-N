@@ -1,0 +1,1 @@
+{"1": {"TTTAAATCGGT": [4, 5]}, "2": {"TTTAAATTTAA": [10, 100]}, "4": {"ATATAAAATTT": [5, 3]}}

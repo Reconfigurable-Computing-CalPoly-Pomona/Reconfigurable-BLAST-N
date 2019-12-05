@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../src/score_matrix.vhd" \
+"../../../../../sim/score_matrix_tb.vhd" \
+
+# Do not sort compile order
+nosort

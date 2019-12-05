@@ -1,0 +1,20 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/jelondon/Desktop/Blastn-master/hdl/sim/ScoreTxTb.vhd,1575350082,vhdl,,,,scoretxtb,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/sim/score_matrix_sq_tb.vhd,1575353321,vhdl,,,,scorematrixsqtb,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/Collector.vhd,1575350772,vhdl,,,,collector,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/ScoreTx.vhd,1575330222,vhdl,,,,scoretx,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/UartRx.vhd,1575270026,vhdl,,,,uartrx,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/UartTx.vhd,1575330150,vhdl,,,,uarttx,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/align_score.v,1575347046,verilog,,C:/Users/jelondon/Desktop/Blastn-master/hdl/src/cell.v,,AlignScore,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/cell.v,1575347046,verilog,,C:/Users/jelondon/Desktop/Blastn-master/hdl/src/comparator.v,,Cell,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/comparator.v,1575347046,verilog,,C:/Users/jelondon/Desktop/Blastn-master/hdl/src/gap_adder.v,,Comparator,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/gap_adder.v,1575347046,verilog,,C:/Users/jelondon/Desktop/Blastn-master/hdl/src/selector.v,,GapAdder,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/score_matrix_sq.vhd,1575352819,vhdl,,,,scorematrixsq,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/selector.v,1575347046,verilog,,C:/Users/jelondon/Desktop/Blastn-master/hdl/src/selector_adder.v,,Selector,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/selector_adder.v,1575347046,verilog,,,,SelectorAdder,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/top.vhd,1575351020,vhdl,,,,top,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/src/top_tb.vhd,1575350859,vhdl,,,,toptb,,,,,,,,
+C:/Users/jelondon/Desktop/Blastn-master/hdl/vivado/Blastn.sim/sim_1/behav/xsim/glbl.v,1575347049,verilog,,,,glbl,,,,,,,,

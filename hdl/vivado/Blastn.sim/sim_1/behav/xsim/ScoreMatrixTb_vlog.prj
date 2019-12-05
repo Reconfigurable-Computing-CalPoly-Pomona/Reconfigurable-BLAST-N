@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../src/align_score.v" \
+"../../../../../src/cell.v" \
+"../../../../../src/comparator.v" \
+"../../../../../src/gap_adder.v" \
+"../../../../../src/selector.v" \
+"../../../../../src/selector_adder.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

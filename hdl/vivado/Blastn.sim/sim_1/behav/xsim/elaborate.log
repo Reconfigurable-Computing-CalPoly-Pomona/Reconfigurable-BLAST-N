@@ -1,0 +1,24 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 8e3d462baef24d79b8cf40cd4e4258c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ScoreMatrixSqTb_behav xil_defaultlib.ScoreMatrixSqTb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.GapAdder
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.Selector
+Compiling module xil_defaultlib.SelectorAdder
+Compiling module xil_defaultlib.AlignScore
+Compiling module xil_defaultlib.Cell
+Compiling architecture blastn of entity xil_defaultlib.ScoreMatrixSq [\ScoreMatrixSq(g_matsize=16)\]
+Compiling architecture blastn of entity xil_defaultlib.scorematrixsqtb
+Built simulation snapshot ScoreMatrixSqTb_behav

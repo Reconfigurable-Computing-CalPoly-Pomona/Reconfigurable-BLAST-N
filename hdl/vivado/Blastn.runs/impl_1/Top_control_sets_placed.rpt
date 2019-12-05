@@ -1,0 +1,119 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Dec  3 14:07:56 2019
+| Host         : DESKTOP-H5ET5KP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    41 |
+|    Minimum number of control sets                        |    41 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   166 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    41 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |    21 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             110 |           53 |
+| Yes          | No                    | No                     |              31 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             177 |           69 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  Clock Signal  |                     Enable Signal                    |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++----------------+------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/temp_byte[0]_i_1_n_0           | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/temp_byte[1]_i_1_n_0           | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/count[6]_i_2__0_n_0            |                                               |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/temp_byte[5]_i_1_n_0           | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/temp_byte[2]_i_1_n_0           | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | SCORE_TRANSMITTER/BYTE_TX/o_tx_i_1_n_0               | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/temp_byte[4]_i_1_n_0           | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/temp_byte[6]_i_1_n_0           | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/temp_byte[3]_i_1_n_0           | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/temp_byte[7]_i_1_n_0           | rst_IBUF                                      |                1 |              1 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/subject[2]                     | rst_IBUF                                      |                2 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/subject[3]                     | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | SCORE_TRANSMITTER/BYTE_TX/count[5]_i_2_n_0           | SCORE_TRANSMITTER/BYTE_TX/count[5]_i_1__0_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[2]_0  | rst_IBUF                                      |                2 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[1][3] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[0][0] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[1][2] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[1][4] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[1][0] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[1][5] | rst_IBUF                                      |                2 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/subject[4]                     | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[1][7] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[0][4] | rst_IBUF                                      |                2 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[0][3] | rst_IBUF                                      |                2 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[1][1] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[1][6] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[0][2] | rst_IBUF                                      |                2 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_sequential_state_reg[0][1] | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/subject[1]                     | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/subject[0]                     | rst_IBUF                                      |                1 |              4 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/FSM_onehot_state[4]_i_1_n_0    | rst_IBUF                                      |                2 |              5 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/count[6]_i_2__0_n_0            | DATA_RECEIVER/BYTE_RX/count[6]_i_1_n_0        |                2 |              6 |
+|  clk_IBUF_BUFG | SCORE_TRANSMITTER/BYTE_TX/temp_byte_0                | rst_IBUF                                      |                3 |              8 |
+|  clk_IBUF_BUFG | SCORE_TRANSMITTER/temp_byte_0                        | rst_IBUF                                      |                6 |              8 |
+|  clk_IBUF_BUFG |                                                      |                                               |                6 |             12 |
+|  clk_IBUF_BUFG |                                                      | rst_IBUF                                      |               13 |             23 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/o_done                         | rst_IBUF                                      |               13 |             29 |
+|  clk_IBUF_BUFG | DATA_RECEIVER/BYTE_RX/E[0]                           |                                               |               14 |             30 |
+|  clk_IBUF_BUFG |                                                      | SmithWaterman/rst_counter[0]_i_1_n_0          |                8 |             32 |
+|  clk_IBUF_BUFG | SmithWaterman/r_score0                               | DATA_RECEIVER/co_done                         |                8 |             32 |
+|  clk_IBUF_BUFG |                                                      | DATA_RECEIVER/co_done                         |               32 |             55 |
++----------------+------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+

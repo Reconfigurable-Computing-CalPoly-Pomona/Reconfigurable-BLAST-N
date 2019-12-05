@@ -1,0 +1,3 @@
+[submodule "cpp/include/parallel-hashmap"]
+	path = cpp/include/parallel-hashmap
+	url = https://github.com/greg7mdp/parallel-hashmap.git

@@ -1,0 +1,1 @@
+-wto "8e3d462baef24d79b8cf40cd4e4258c1" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "UartTb_behav" "xil_defaultlib.UartTb" -log "elaborate.log" 

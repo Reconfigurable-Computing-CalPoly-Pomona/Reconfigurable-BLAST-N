@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../src/ScoreTx.vhd" \
+"../../../../../src/UartRx.vhd" \
+"../../../../../src/UartTx.vhd" \
+"../../../../../sim/ScoreTxTb.vhd" \
+
+# Do not sort compile order
+nosort

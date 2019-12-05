@@ -1,0 +1,7 @@
+Running: xsim.dir/ScoreTxTb_behav/xsimk.exe -simmode gui -wdb ScoreTxTb_behav.wdb -simrunnum 0 -socket 50527
+Design successfully loaded
+Design Loading Memory Usage: 6004 KB (Peak: 6004 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 9840 KB (Peak: 9840 KB)
+Simulation CPU Usage: 77 ms

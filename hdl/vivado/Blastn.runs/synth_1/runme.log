@@ -1,0 +1,601 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13832 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 717.371 ; gain = 177.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/jedim/Desktop/Blastn/hdl/src/top.vhd:20]
+	Parameter g_RSTCNT bound to: 5 - type: integer 
+	Parameter g_SIZE bound to: 12 - type: integer 
+	Parameter g_BITS bound to: 32 - type: integer 
+	Parameter g_BAUD_RATE bound to: 1000000 - type: integer 
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+	Parameter g_BITS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ScoreTx' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/ScoreTx.vhd:4' bound to instance 'SCORE_TRANSMITTER' of component 'ScoreTx' [C:/Users/jedim/Desktop/Blastn/hdl/src/top.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'ScoreTx' [C:/Users/jedim/Desktop/Blastn/hdl/src/ScoreTx.vhd:19]
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+	Parameter g_BITS bound to: 32 - type: integer 
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'UartTx' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/UartTx.vhd:5' bound to instance 'BYTE_TX' of component 'UartTx' [C:/Users/jedim/Desktop/Blastn/hdl/src/ScoreTx.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'UartTx' [C:/Users/jedim/Desktop/Blastn/hdl/src/UartTx.vhd:20]
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UartTx' (1#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/UartTx.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/jedim/Desktop/Blastn/hdl/src/ScoreTx.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ScoreTx' (2#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/ScoreTx.vhd:19]
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+	Parameter g_SIZE bound to: 12 - type: integer 
+	Parameter g_BITS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Collector' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/Collector.vhd:5' bound to instance 'DATA_RECEIVER' of component 'Collector' [C:/Users/jedim/Desktop/Blastn/hdl/src/top.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'Collector' [C:/Users/jedim/Desktop/Blastn/hdl/src/Collector.vhd:30]
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+	Parameter g_SIZE bound to: 12 - type: integer 
+	Parameter g_BITS bound to: 32 - type: integer 
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'UartRx' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/UartRx.vhd:5' bound to instance 'BYTE_RX' of component 'UartRx' [C:/Users/jedim/Desktop/Blastn/hdl/src/Collector.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'UartRx' [C:/Users/jedim/Desktop/Blastn/hdl/src/UartRx.vhd:18]
+	Parameter g_CLK_PER_BIT bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UartRx' (3#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/UartRx.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Collector' (4#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/Collector.vhd:30]
+	Parameter g_RSTCNT bound to: 5 - type: integer 
+	Parameter g_MATSIZE bound to: 12 - type: integer 
+	Parameter g_BITS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ScoreMatrixSq' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:5' bound to instance 'SmithWaterman' of component 'ScoreMatrixSq' [C:/Users/jedim/Desktop/Blastn/hdl/src/top.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'ScoreMatrixSq' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:27]
+	Parameter g_RSTCNT bound to: 5 - type: integer 
+	Parameter g_MATSIZE bound to: 12 - type: integer 
+	Parameter g_BITS bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-6157] synthesizing module 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8]
+INFO: [Synth 8-6157] synthesizing module 'GapAdder' [C:/Users/jedim/Desktop/Blastn/hdl/src/gap_adder.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GapAdder' (5#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/gap_adder.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlignScore' [C:/Users/jedim/Desktop/Blastn/hdl/src/align_score.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [C:/Users/jedim/Desktop/Blastn/hdl/src/comparator.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (6#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/comparator.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Selector' [C:/Users/jedim/Desktop/Blastn/hdl/src/selector.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Selector' (7#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/selector.v:7]
+INFO: [Synth 8-6157] synthesizing module 'SelectorAdder' [C:/Users/jedim/Desktop/Blastn/hdl/src/selector_adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'SelectorAdder' (8#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/selector_adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AlignScore' (9#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/align_score.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Cell' (10#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Synth 8-3491] module 'Cell' declared at 'C:/Users/jedim/Desktop/Blastn/hdl/src/cell.v:8' bound to instance 'CURRENT_CELL' of component 'Cell' [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:112]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'ScoreMatrixSq' (11#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/score_matrix_sq.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Top' (12#1) [C:/Users/jedim/Desktop/Blastn/hdl/src/top.vhd:20]
+WARNING: [Synth 8-3331] design Selector has unconnected port sel[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 781.023 ; gain = 241.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 781.023 ; gain = 241.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 781.023 ; gain = 241.340
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jedim/Desktop/Blastn/hdl/nexys4.xdc]
+Finished Parsing XDC File [C:/Users/jedim/Desktop/Blastn/hdl/nexys4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jedim/Desktop/Blastn/hdl/nexys4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 920.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 920.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 920.680 ; gain = 380.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 920.680 ; gain = 380.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 920.680 ; gain = 380.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UartTx'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ScoreTx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UartRx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Collector'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                              000 |                              000
+             s_start_bit |                              001 |                              001
+         s_transmit_bits |                              010 |                              010
+              s_stop_bit |                              011 |                              011
+              s_clean_up |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UartTx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                              000 |                              000
+                 s_byte0 |                              001 |                              001
+             s_pre_byte1 |                              010 |                              010
+                 s_byte1 |                              011 |                              011
+             s_pre_byte2 |                              100 |                              100
+                 s_byte2 |                              101 |                              101
+             s_pre_byte3 |                              110 |                              110
+                 s_byte3 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ScoreTx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                            00001 |                              000
+             s_start_bit |                            00010 |                              001
+          s_receive_bits |                            00100 |                              010
+              s_stop_bit |                            01000 |                              011
+              s_clean_up |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UartRx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_size |                              000 |                              000
+             s_gap_start |                              001 |                              001
+             s_gap_count |                              010 |                              010
+                 s_query |                              011 |                              011
+               s_subject |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Collector'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 920.680 ; gain = 380.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 144   
++---Registers : 
+	               36 Bit    Registers := 2     
+	               32 Bit    Registers := 3     
+	               31 Bit    Registers := 4     
+	               24 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+	   5 Input     36 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 3     
+	   5 Input     31 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   5 Input     24 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 145   
+	   3 Input      2 Bit        Muxes := 288   
+	   2 Input      2 Bit        Muxes := 1296  
+	   5 Input      1 Bit        Muxes := 20    
+	   8 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module UartTx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 10    
+Module ScoreTx 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 6     
+Module UartRx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+Module Collector 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               31 Bit    Registers := 4     
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+	   5 Input     36 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 3     
+	   5 Input     31 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   5 Input     24 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module GapAdder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+Module Comparator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module Selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module SelectorAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+Module Cell 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+Module ScoreMatrixSq 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 920.680 ; gain = 380.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 920.680 ; gain = 380.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 924.328 ; gain = 384.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 996.754 ; gain = 457.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 996.754 ; gain = 457.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 996.754 ; gain = 457.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 996.754 ; gain = 457.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 996.754 ; gain = 457.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 996.754 ; gain = 457.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 996.754 ; gain = 457.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    36|
+|3     |LUT1   |    34|
+|4     |LUT2   |    87|
+|5     |LUT3   |   177|
+|6     |LUT4   |   110|
+|7     |LUT5   |   180|
+|8     |LUT6   |   268|
+|9     |FDRE   |   328|
+|10    |FDSE   |     2|
+|11    |IBUF   |     3|
+|12    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------+------+
+|      |Instance            |Module        |Cells |
++------+--------------------+--------------+------+
+|1     |top                 |              |  1227|
+|2     |  DATA_RECEIVER     |Collector     |   422|
+|3     |    BYTE_RX         |UartRx        |   136|
+|4     |  SCORE_TRANSMITTER |ScoreTx       |    80|
+|5     |    BYTE_TX         |UartTx        |    59|
+|6     |  SmithWaterman     |ScoreMatrixSq |   720|
++------+--------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 996.754 ; gain = 457.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 996.754 ; gain = 317.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 996.754 ; gain = 457.070
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 996.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+147 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 996.754 ; gain = 705.828
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 996.754 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jedim/Desktop/Blastn/hdl/vivado/Blastn.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 14:06:38 2019...
