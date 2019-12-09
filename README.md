@@ -17,8 +17,17 @@ Electrical and Computer Engineering Senior Project at California State Polytechn
 - Sivaramakrishnan Prabakar
 
 ## Advisors
-- Mohamed El-Hadedy
-- Mostafa M. Hashim Ellabaan
+
+**- Mohamed El-Hadedy:** Assistant Professor, Electrical and Computer Engineering department, College of Engineering, California State Polytechnic University, Pomona.
+
+**- Mostafa M. Hashim Ellabaan:** Senior Researcher, Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark.  
+
+
+**Collaborators:**
+
+**1. Wen-Mei Hwu:**  Director of Center for Cognitive Computing System Research and Walter J. Sanders III-AMD Endowed Chair Professor in Elecrical and Computer Engineering at UIUC 
+
+**2. Jinjun Xiong:** Director of Center for Cognitive Computing System Research and Adjunct Research Professor at UIUC  
 
 
 ## Project Reporting
@@ -51,5 +60,4 @@ Additionally, during our implementation of the Smith Waterman Algorithm in VHDL,
 
 ## Sponsors
 - [Xilinx Inc.](https://www.xilinx.com/)
-- [IBM](https://www.ibm.com/us-en/)
-- [Center for Cognitive Computing System Research](https://www.c3sr.com/)
+- [IBM-Illinois Center for Cognitive Computing Systems Research](https://www.c3sr.com/)
