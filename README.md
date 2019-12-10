@@ -60,4 +60,5 @@ Additionally, during our implementation of the Smith Waterman Algorithm in VHDL,
 
 ## Sponsors
 - [Xilinx Inc.](https://www.xilinx.com/)
+- [IBM](https://www.ibm.com)
 - [IBM-Illinois Center for Cognitive Computing Systems Research](https://www.c3sr.com/)
